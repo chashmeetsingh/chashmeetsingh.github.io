@@ -26,10 +26,10 @@
     "_Ctor": {}
   },
   "site": {
-    "title": "",
-    "description": "",
+    "title": "My Blog",
+    "description": "This is a blog maintained to post my weekly accomplishments in GSOC.",
     "logo": "",
-    "cover": "",
+    "cover": "http://colorfully.eu/wp-content/uploads/2013/12/nothing-is-imposilbe-fb-cover.jpg",
     "delay": "",
     "postsPerPage": "",
     "googleAnalytics": "",
