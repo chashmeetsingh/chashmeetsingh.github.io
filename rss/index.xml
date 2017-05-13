@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>https://www.incimages.com/uploaded_files/image/1940x900/software-computer-code-1940x900_35196.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 13 May 2017 20:11:23 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div class="sect1">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>https://www.incimages.com/uploaded_files/image/1940x900/software-computer-code-1940x900_35196.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 13 May 2017 20:14:34 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_what_is_susi">What is Susi?</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -50,11 +50,11 @@ eol</pre>
 <p>The console is meant to output the actual response the user sees as response.</p>
 </li>
 <li>
-<p>In place of the “url”, the API endpoint is passed in.
-“path” here specifies how we traverse through the response Json or Jsonp to get the object, starts with “$.”.</p>
+<p>In place of the <em>url</em>, the API endpoint is passed in.
+“path” here specifies how we traverse through the response Json or Jsonp to get the object, starts with <em>$.</em>.</p>
 </li>
 <li>
-<p>At last, “eol” which is the end-of-line marks the end of a skill.</p>
+<p>At last, <em>eol</em> which is the end-of-line marks the end of a skill.</p>
 </li>
 </ul>
 </div>
@@ -81,16 +81,16 @@ eol</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Match the string “random gif” with the user’s query.</p>
+<p>Match the string <em>random gif</em> with the user’s query.</p>
 </li>
 <li>
-<p>On successful match, make an API call to the API endpoint specified in “url”</p>
+<p>On successful match, make an API call to the API endpoint specified in <em>url</em></p>
 </li>
 <li>
-<p>On response, extract the object at the specified path in the json under “path”</p>
+<p>On response, extract the object at the specified path in the json under <em>path</em></p>
 </li>
 <li>
-<p>Respond to the user with the “url” key’s value which would here be an URL of a GIF.</p>
+<p>Respond to the user with the <em>url</em> key’s value which would here be an URL of a GIF.</p>
 </li>
 </ul>
 </div>
@@ -111,7 +111,7 @@ eol</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>So, we queried “random gif” and we got a response “Click Here!”. The complete URL didn’t show up because all the URLs are currently parsed and a hyperlink for each is created. So try clicking on it to find a GIF.</p>
+<p>So, we queried <em>random gif</em> and we got a response <em>Click Here!</em>. The complete URL didn’t show up because all the URLs are currently parsed and a hyperlink for each is created. So try clicking on it to find a GIF.</p>
 </div>
 <div class="paragraph">
 <p>Now, let’s look at one more skill I developed during this period.</p>
@@ -133,13 +133,13 @@ eol</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>We have here president of *|who is the president of *| president *, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “\*” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.</p>
+<p>We have here president of \*|who is the president of *| president *, which means the user’s query matches with anyone of the following because of the use of pipe symbol <em>|</em>. The <em>*</em> here replaces a word or a list of words, which can be accessed like: <em>${index}$</em>  where index is replaced by the position of the <em>*</em> in the expression starting from 1.</p>
 </li>
 <li>
-<p>Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “<strong>*</strong>” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.</p>
+<p>Now we have something new in the URL. See that  <em>$1$</em>  inside the URL? On runtime, that is replaced with the content of the <em>*</em> variable. So if a user puts in query like: <em>president of usa</em>, <em>usa</em> is mapped to <em>$1$</em> and is replaced in the URL and appropriate API request is made.</p>
 </li>
 <li>
-<p>Then the path is traversed in the json response and the value of the “plaintext” key is used to respond to the user.</p>
+<p>Then the path is traversed in the json response and the value of the <em>plaintext</em> key is used to respond to the user.</p>
 </li>
 </ul>
 </div>
