@@ -29,9 +29,9 @@
     "title": "My Blog",
     "description": "This is a blog maintained to post my weekly accomplishments in GSOC.",
     "logo": "",
-    "cover": "http://colorfully.eu/wp-content/uploads/2013/12/nothing-is-imposilbe-fb-cover.jpg",
+    "cover": "",
     "delay": "",
-    "postsPerPage": "",
+    "postsPerPage": "5",
     "googleAnalytics": "",
     "disqus": ""
   },
