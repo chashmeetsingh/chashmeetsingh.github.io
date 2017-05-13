@@ -26,9 +26,9 @@
     "_Ctor": {}
   },
   "site": {
-    "title": "My Blog",
+    "title": "Chashmeet Singh",
     "description": "This is a blog maintained to post my weekly accomplishments in GSOC.",
-    "logo": "",
+    "logo": "https://cdn.dribbble.com/users/8106/screenshots/2550224/cs2_1x.png",
     "cover": "",
     "delay": "",
     "postsPerPage": "5",
