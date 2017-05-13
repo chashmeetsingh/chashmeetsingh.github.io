@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" href="https://chashmeetsingh.github.io/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="//chashmeetsingh.github.io/themes/casper/assets/css/screen.css?v=1494700670852" />
+    <link rel="stylesheet" type="text/css" href="//chashmeetsingh.github.io/themes/casper/assets/css/screen.css?v=1494700932427" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <link rel="canonical" href="https://chashmeetsingh.github.io/2017/05/13/Susi-AI-Skill-Development.html" />
@@ -176,7 +176,7 @@ eol</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>Let’s try it out on Susi Web Chat. For this, you will first have to load your skill using the dream command followed by etherpad name:</p>
+<p>Let’s try it out on <a href="http://susi.ai/chat">Susi Web Chat</a>. For this, you will first have to load your skill using the dream command followed by etherpad name:</p>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -209,10 +209,10 @@ eol</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>We have here “president of <strong>|who is the president of *| president *”, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “</strong>” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.</p>
+<p>We have here <strong>president of *|who is the president of *| president <strong>, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “</strong></strong>” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.</p>
 </li>
 <li>
-<p>Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “*” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.</p>
+<p>Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “<strong>*</strong>” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.</p>
 </li>
 <li>
 <p>Then the path is traversed in the json response and the value of the “plaintext” key is used to respond to the user.</p>
@@ -220,7 +220,7 @@ eol</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>It’s now time to try it out on Susi Web Chat.</p>
+<p>It’s now time to try it out on <a href="http://susi.ai/chat">Susi Web Chat</a>.</p>
 </div>
 <div class="paragraph">
 <p>So, we got our desired response here, i.e., the name of the president of usa.</p>
@@ -299,8 +299,8 @@ eol</pre>
        
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-    <script type="text/javascript" src="//chashmeetsingh.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1494700670852"></script>
-    <script type="text/javascript" src="//chashmeetsingh.github.io/themes/casper/assets/js/index.js?v=1494700670852"></script>
+    <script type="text/javascript" src="//chashmeetsingh.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1494700932427"></script>
+    <script type="text/javascript" src="//chashmeetsingh.github.io/themes/casper/assets/js/index.js?v=1494700932427"></script>
 
 </body>
 </html>
