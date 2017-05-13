@@ -58,7 +58,7 @@ Steps involved:
 * On response, extract the object at the specified path in the json under “path”
 * Respond to the user with the “url” key’s value which would here be an URL of a GIF.
 
-Let’s try it out on Susi Web Chat. For this, you will first have to load your skill using the dream command followed by etherpad name: 
+Let’s try it out on http://susi.ai/chat[Susi Web Chat]. For this, you will first have to load your skill using the dream command followed by etherpad name: 
     
     dream <etherpad name> 
 
@@ -84,12 +84,12 @@ Now, let’s look at one more skill I developed during this period.
 
 Let’s understand this step by step:
 
-* We have here “president of *|who is the president of *| president *”, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “*” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.
-* Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “*” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.
+* We have here *president of *|who is the president of *| president **, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “***” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.
+* Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “***” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.
 * Then the path is traversed in the json response and the value of the “plaintext” key is used to respond to the user.
 
 
-It’s now time to try it out on Susi Web Chat.
+It’s now time to try it out on http://susi.ai/chat[Susi Web Chat].
 
 
 
