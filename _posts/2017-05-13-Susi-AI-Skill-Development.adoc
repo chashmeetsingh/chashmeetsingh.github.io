@@ -33,9 +33,9 @@ So, let me explain this line by line.
 
 * The regular expression is the one to which the user’s query is matched first.
 * The console is meant to output the actual response the user sees as response.
-* In place of the “url”, the API endpoint is passed in.
-“path” here specifies how we traverse through the response Json or Jsonp to get the object, starts with “$.”.
-* At last, “eol” which is the end-of-line marks the end of a skill.
+* In place of the _url_, the API endpoint is passed in.
+“path” here specifies how we traverse through the response Json or Jsonp to get the object, starts with _$._.
+* At last, _eol_ which is the end-of-line marks the end of a skill.
 
 
 Let’s take an example for better understanding of this:
@@ -53,10 +53,10 @@ Let’s take an example for better understanding of this:
 
 Steps involved:
 
-* Match the string “random gif” with the user’s query.
-* On successful match, make an API call to the API endpoint specified in “url”
-* On response, extract the object at the specified path in the json under “path”
-* Respond to the user with the “url” key’s value which would here be an URL of a GIF.
+* Match the string _random gif_ with the user’s query.
+* On successful match, make an API call to the API endpoint specified in _url_
+* On response, extract the object at the specified path in the json under _path_
+* Respond to the user with the _url_ key’s value which would here be an URL of a GIF.
 
 Let’s try it out on http://susi.ai/chat[Susi Web Chat]. For this, you will first have to load your skill using the dream command followed by etherpad name: 
     
@@ -66,7 +66,7 @@ And then you can start testing your skill.
 
 image::https://github.com/chashmeetsingh/chashmeetsingh.github.io/blob/master/images/random-gif.png?raw=true[Random GIF]
 
-So, we queried “random gif” and we got a response “Click Here!”. The complete URL didn’t show up because all the URLs are currently parsed and a hyperlink for each is created. So try clicking on it to find a GIF.
+So, we queried _random gif_ and we got a response _Click Here!_. The complete URL didn’t show up because all the URLs are currently parsed and a hyperlink for each is created. So try clicking on it to find a GIF.
 
 
 
@@ -84,9 +84,9 @@ Now, let’s look at one more skill I developed during this period.
 
 Let’s understand this step by step:
 
-* We have here president of \*|who is the president of *| president *, which means the user’s query matches with anyone of the following because of the use of pipe symbol “|”. The “\*” here replaces a word or a list of words, which can be accessed like: “${index}$”  where index is replaced by the position of the “*” in the expression starting from 1.
-* Now we have something new in the URL. See that  $1$  inside the URL? On runtime, that is replaced with the content of the “***” variable. So if a user puts in query like: “president of usa”, “usa” is mapped to $1$ and is replaced in the URL and appropriate API request is made.
-* Then the path is traversed in the json response and the value of the “plaintext” key is used to respond to the user.
+* We have here president of \*|who is the president of *| president *, which means the user’s query matches with anyone of the following because of the use of pipe symbol _|_. The _*_ here replaces a word or a list of words, which can be accessed like: _${index}$_  where index is replaced by the position of the _*_ in the expression starting from 1.
+* Now we have something new in the URL. See that  _$1$_  inside the URL? On runtime, that is replaced with the content of the _*_ variable. So if a user puts in query like: _president of usa_, _usa_ is mapped to _$1$_ and is replaced in the URL and appropriate API request is made.
+* Then the path is traversed in the json response and the value of the _plaintext_ key is used to respond to the user.
 
 
 It’s now time to try it out on http://susi.ai/chat[Susi Web Chat].
