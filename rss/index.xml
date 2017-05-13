@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>https://www.incimages.com/uploaded_files/image/1940x900/software-computer-code-1940x900_35196.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 13 May 2017 18:45:01 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div class="sect1">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>https://www.incimages.com/uploaded_files/image/1940x900/software-computer-code-1940x900_35196.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 13 May 2017 20:08:16 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_what_is_susi">What is Susi?</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -105,6 +105,11 @@ eol</pre>
 <div class="paragraph">
 <p>And then you can start testing your skill.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="http://github.com/chashmeetsingh/chashmeetsingh.github.io/images/random-gif.png" alt="Random GIF">
+</div>
+</div>
 <div class="paragraph">
 <p>So, we queried “random gif” and we got a response “Click Here!”. The complete URL didn’t show up because all the URLs are currently parsed and a hyperlink for each is created. So try clicking on it to find a GIF.</p>
 </div>
@@ -140,6 +145,11 @@ eol</pre>
 </div>
 <div class="paragraph">
 <p>It’s now time to try it out on <a href="http://susi.ai/chat">Susi Web Chat</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://github.com/chashmeetsingh/chashmeetsingh.github.io/images/president.png" alt="President">
+</div>
 </div>
 <div class="paragraph">
 <p>So, we got our desired response here, i.e., the name of the president of usa.</p>
