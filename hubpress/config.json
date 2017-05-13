@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "the-shell"
+    "name": "uno-zen"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/saga",
+    "theme": "//chashmeetsingh.github.io/themes/the-shell",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
