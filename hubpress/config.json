@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "ghostium"
+    "name": "ichi"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/roon",
+    "theme": "//chashmeetsingh.github.io/themes/ghostium",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
