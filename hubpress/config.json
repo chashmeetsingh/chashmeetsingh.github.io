@@ -11,7 +11,7 @@
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/uno-zen",
+    "theme": "//chashmeetsingh.github.io/themes/the-shell",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
@@ -29,7 +29,7 @@
     "title": "Chashmeet Singh",
     "description": "This is a blog maintained to post my weekly accomplishments in GSOC.",
     "logo": "https://avatars0.githubusercontent.com/u/8962264?v=3&u=469ed48e3bde5ec302aeb6e4245d1eff464fbf80&s=400",
-    "cover": "https://ledroideenchaine.com/wp-content/uploads/2016/08/Legacy-code.jpg",
+    "cover": "http://melissavandyke.com/wp-content/uploads/2015/09/code.jpg",
     "delay": "",
     "postsPerPage": "5",
     "googleAnalytics": "",
