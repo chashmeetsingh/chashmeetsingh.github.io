@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "uno-zen"
+    "name": "the-shell"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/saga",
+    "theme": "//chashmeetsingh.github.io/themes/uno-zen",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
@@ -39,8 +39,8 @@
     "email": "chashmeetsingh@gmail.com",
     "github": "https://github.com/chashmeetsingh",
     "twitter": "https://twitter.com/cchashmeetsingh",
-    "facebook": "",
-    "googleplus": "",
+    "facebook": "https://www.facebook.com/chashmeet",
+    "googleplus": "https://plus.google.com/+ChashmeetSingh",
     "instagram": "",
     "pinterest": "",
     "flickr": "",
