@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "uno"
+    "name": "roon"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/the-shell",
+    "theme": "//chashmeetsingh.github.io/themes/uno",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
