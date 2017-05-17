@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "ichi"
+    "name": "saga"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/ghostium",
+    "theme": "//chashmeetsingh.github.io/themes/ichi",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
