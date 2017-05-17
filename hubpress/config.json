@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "saga"
+    "name": "uno-zen"
   },
   "urls": {
     "site": "https://chashmeetsingh.github.io",
     "hubpress": "https://chashmeetsingh.github.io",
-    "theme": "//chashmeetsingh.github.io/themes/ichi",
+    "theme": "//chashmeetsingh.github.io/themes/saga",
     "images": "https://chashmeetsingh.github.io/images"
   },
   "initialisationConfigComponent": {
