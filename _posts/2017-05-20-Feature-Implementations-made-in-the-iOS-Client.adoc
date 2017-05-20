@@ -82,6 +82,7 @@ Let's check the working of the feature:
 
 image::http://i.imgur.com/EqJ26aU.gif[Imgur]
 
+
 == Awesome!
 
 Here we finish up the blog post for this week. See you next time!
