@@ -1,5 +1,12 @@
 = Susi AI Skill Development
 
+++++
+<style>
+  .post-title {
+    margin-bottom: 30px;
+  }
+</style>
+++++
 [%hardbreaks]
 == What is Susi?
 
