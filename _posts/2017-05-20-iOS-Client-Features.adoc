@@ -1,8 +1,7 @@
 = iOS Client Features
 
 [%hardbreaks]
-[%hardbreaks]
-== What feature are we talking about?
+=== What feature are we talking about?
 We are going to discuss only one feature this time, we will see the rest next time. It is:
 
 * Calculation of the height and width of the Chat Message Bubble 
