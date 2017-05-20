@@ -1,6 +1,6 @@
 = Susi AI Skill Development
 
-
+[%hardbreaks]
 == What is Susi?
 
 Susi is an open source intelligent personal assistant which has the capability to learn and respond better to queries. It is also capable of making to-do lists, setting alarms, providing weather and traffic info all in real time. Susi responds based on skills.
