@@ -1,0 +1,92 @@
+= iOS Client Features
+
+[%hardbreaks]
+[%hardbreaks]
+== What feature are we talking about?
+We are going to discuss only one feature this time, we will see the rest next time. It is:
+
+* Calculation of the height and width of the Chat Message Bubble 
+
+So let's start first with the implementation of the movement made by the message container when the keyboard is toggled.
+
+Now, in order to detect whether the keyboard is showing or not, we need an observer that watches the showing and hiding of the keyboard at all times.
+
+So here are the two method we use:
+
+```
+NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+
+NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+```
+
+Let's break these down.
+
+The first one adds an observer which watches whether the keyboard is open or not and based on that calls a method. Here the `NSNotification.Name.UIKeyboardWillShow` Notification is used to detect this.
+
+Same goes for the second observer but here we use the `NSNotification.Name.UIKeyboardWillHide` Notification.
+
+Both these observer when observe the change, call a method `handleKeyboardNotification` which we are going to checkout next.
+
+Let's start developing this function.
+
+So, what exactly do we need next?
+We need the keyboard's height so that we can add / subtract it to the `bottomConstraint` that holds the message container at the bottom based on whether the keyboard is showing or not.
+
+This method takes in the `NSNotification` paramter, which is to get the `userInfo` from the notification, like this:
+
+    let userInfo = notification.userInfo
+    
+Let's grab the keyboard height next. For grabbing this we use the `UIKeyboardFrameEndUserInfoKey` key inside the `userInfo` we just obtained above. Next, we need to convert this to a rectangle so that we get the frame of the keyboard. We do this by using the `cgRectValue` attribute which returns the CoreGraphics rectangle structure.
+
+    let keyboardFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as AnyObject).cgRectValue
+    
+Next let's check whether the keyboard is being shown or hidden.
+
+    let isKeyboardShowing = notification.name == NSNotification.Name.UIKeyboardWillShow
+    
+The `notification.name == NSNotification.Name.UIKeyboardWillShow` would return `true` or `false` by checking the `name` attribute of the notification that called this function.
+
+Let's set the bottom constraint for the message container now.
+
+    bottomConstraint?.constant = isKeyboardShowing ? -keyboardFrame!.height : 0
+    
+Here, we check the `isKeyboardShowing` bool we defined above and based on that we assign the bottom constraint to the bottom of the keyboard if the keyboard is being shown, else we restore it to be at the bottom of the screen.
+
+Now, in order to test this functionality we do two things:
+
+1. Make a function that subscribes to the notifications
+
+    func subscribeToKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+
+2. Call this function inside `viewDidLoad()`
+
+Now, we are actually done with the functionality and if we try to run this we will observe that the frame does change but it takes some time for the keyboard to show up.
+
+image::http://i.imgur.com/EQS8OPq.gif[Imgur]
+
+_Note: We have enabled `Slow Animations` for the simulator to view this better._
+
+What we can do to resoleve this is, we use the animate method of `UIView` as follows.
+
+    UIView.animate(withDuration: 0, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+                self.view.layoutIfNeeded()
+    }, completion: nil)
+
+Here, we set the duration to `0` so that the animation happens without any delay and inside the `animations` block we have made a call to `self.view.layoutIfNeeded` which helps to lay out subviews immediately and we have passed `nil` to the completion block.
+
+Let's check the working of the feature:
+
+image::http://i.imgur.com/EqJ26aU.gif[Imgur]
+
+[%hardbreaks]
+== Awesome!
+
+Here we finish up the blog post for this week. See you next time!
+
+
+
+
+
