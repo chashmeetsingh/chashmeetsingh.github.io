@@ -1,5 +1,12 @@
 = iOS Client Features
 
+++++
+<style>
+  .post-title {
+    margin-bottom: 30px;
+  }
+</style>
+++++
 [%hardbreaks]
 === What feature are we talking about?
 We are going to discuss only one feature this time, we will see the rest next time. It is:
