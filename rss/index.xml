@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>http://melissavandyke.com/wp-content/uploads/2015/09/code.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 20 May 2017 07:38:13 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[iOS Client Features]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chashmeet Singh]]></title><description><![CDATA[This is a blog maintained to post my weekly accomplishments in GSOC.]]></description><link>https://chashmeetsingh.github.io</link><image><url>http://melissavandyke.com/wp-content/uploads/2015/09/code.jpg</url><title>Chashmeet Singh</title><link>https://chashmeetsingh.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Sat, 20 May 2017 07:41:08 GMT</lastBuildDate><atom:link href="https://chashmeetsingh.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[iOS Client Features]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <style>
   .post-title {
@@ -153,7 +153,16 @@ We need the keyboard&#8217;s height so that we can add / subtract it to the <cod
 <p>Here we finish up the blog post for this week. See you next time!</p>
 </div>
 </div>
-</div>]]></description><link>https://chashmeetsingh.github.io/2017/05/20/iOS-Client-Features.html</link><guid isPermaLink="true">https://chashmeetsingh.github.io/2017/05/20/iOS-Client-Features.html</guid><dc:creator><![CDATA[Chashmeet Singh]]></dc:creator><pubDate>Sat, 20 May 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div class="sect1">
+</div>]]></description><link>https://chashmeetsingh.github.io/2017/05/20/iOS-Client-Features.html</link><guid isPermaLink="true">https://chashmeetsingh.github.io/2017/05/20/iOS-Client-Features.html</guid><dc:creator><![CDATA[Chashmeet Singh]]></dc:creator><pubDate>Sat, 20 May 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Susi AI Skill Development]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<style>
+  .post-title {
+    margin-bottom: 30px;
+  }
+</style>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_what_is_susi">What is Susi?</h2>
 <div class="sectionbody">
 <div class="paragraph">
